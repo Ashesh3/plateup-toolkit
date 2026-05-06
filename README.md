@@ -4,6 +4,8 @@ A browser-based control panel for [PlateUp!](https://store.steampowered.com/app/
 
 **Live:** <https://plateup-toolkit.vercel.app>
 
+<img width="699" height="825" alt="image" src="https://github.com/user-attachments/assets/3551217c-bb7c-4d2c-a4b6-4e5539bca5ca" />
+
 ## How to use
 
 1. Launch **PlateUp!**
