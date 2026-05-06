@@ -2,6 +2,8 @@
 
 A browser-based control panel for [PlateUp!](https://store.steampowered.com/app/1599600/PlateUp/) that connects to the game's built-in Twitch integration WebSocket so you can spawn appliances, create cards, and toggle game state directly from your browser.
 
+**Live:** <https://plateup-toolkit.vercel.app>
+
 ## How to use
 
 1. Launch **PlateUp!**
@@ -13,6 +15,8 @@ A browser-based control panel for [PlateUp!](https://store.steampowered.com/app/
    - **Cards** — pick one or more cards and click *Add* to create them.
 
 The live game state is shown in the table at the top of the page.
+
+> **Note:** the page connects to `ws://localhost:12392`. Chrome and Edge treat `localhost` as a secure context so this works from the HTTPS-hosted version, but if your browser blocks the connection, just clone this repo and serve it locally instead.
 
 ## Local development
 
