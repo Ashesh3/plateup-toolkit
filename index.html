@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>PlateUp! Toolkit</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/TheInsecureAccount/mdb-ui-kit-pro-essential@main/css/mdb.min.css" />
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card shadow-2-strong" style="min-width: 600px; width:max-content">
+            <div class="card-body">
+                <h1 class="text-center">PlateUp!</h1>
+                <hr />
+                <table class="table table-striped table-hover table-bordered table-sm" id="gameStateTable">
+                    <thead>
+                        <tr>
+                            <th scope="col"><strong>Name</strong></th>
+                            <th scope="col"><strong>Value</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <hr />
+                <div>
+                    <ul class="nav nav-tabs nav-justified mb-3" id="ex1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="ex3-tab-1" data-mdb-toggle="tab" href="#ex3-tabs-1"
+                                role="tab" aria-controls="ex3-tabs-1" aria-selected="true">Appliances</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="ex3-tab-3" data-mdb-toggle="tab" href="#ex3-tabs-3" role="tab"
+                                aria-controls="ex3-tabs-3" aria-selected="false">Game</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="ex3-tab-2" data-mdb-toggle="tab" href="#ex3-tabs-2" role="tab"
+                                aria-controls="ex3-tabs-2" aria-selected="false">Cards</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="ex2-content">
+                        <div class="tab-pane fade show active gap-3" id="ex3-tabs-1" role="tabpanel"
+                            aria-labelledby="ex3-tab-1">
+                            <div class="d-flex">
+                                <div class="w-100 me-2">
+                                    <select multiple id="appliances-select"></select>
+                                    <label class="form-label select-label">Select Appliances</label>
+                                </div>
+                                <button type="button" class="btn btn-success" id="select-appliances-button">Add</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="ex3-tabs-3" role="tabpanel" aria-labelledby="ex3-tab-3">
+                            <div class="d-flex">
+                                <div class="w-100 me-2">
+                                    <select class="select" id="game-select">
+                                        <option value="SET_UI_VISIBILITY">SET_UI_VISIBILITY</option>
+                                    </select>
+                                    <label class="form-label select-label">Select Option</label>
+                                </div>
+                                <input type="number" class="form-control me-2" id="game-input" placeholder="Value"
+                                    style="width: 100px;" />
+                                <button type="button" class="btn btn-success" id="set-game-button">Set</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex3-tab-2">
+                            <div class="d-flex">
+                                <div class="w-100 me-2">
+                                    <select multiple id="cards-select"></select>
+                                    <label class="form-label select-label">Select Cards</label>
+                                </div>
+                                <button type="button" class="btn btn-success" id="set-cards-button">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="exampleModalCenteredScrollable" aria-labelledby="exampleModalCenteredScrollableTitle"
+                data-mdb-backdrop="static" data-mdb-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header" style="justify-content: center;">
+                            <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Connection Status</h5>
+                        </div>
+                        <div class="modal-body">
+                            <h4 class="text-danger text-center">Disconnected!</h4>
+                            <hr />
+                            <div class="d-flex flex-row" style="justify-content: center;">
+                                <h5 class="text-success" style="font-size: 16px;">Connecting... &nbsp;&nbsp; </h5>
+                                <div class="spinner-border text-success" style="height: 20px; width: 20px;"
+                                    role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/TheInsecureAccount/mdb-ui-kit-pro-essential@main/js/mdb.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
